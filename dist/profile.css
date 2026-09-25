@@ -1,0 +1,30 @@
+#approach .principles{grid-template-columns:repeat(5,minmax(0,1fr));gap:26px}
+#approach .principle h3{font-size:23px;overflow-wrap:anywhere}
+.team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px}
+.team-member{border-top:1px solid #000;padding-top:26px}
+.team-initials{display:grid;place-items:center;width:60px;height:60px;background:var(--wine);color:white;font-size:23px;margin-bottom:25px}
+.team-member h3{font-size:26px;line-height:1.2;font-weight:500;margin-bottom:10px}
+.team-member p{color:var(--muted);font-size:16px}
+.team-member .team-role{color:var(--wine);margin-bottom:18px}
+.qualifications{margin-top:50px;border-block:1px solid var(--line);padding:24px 0}
+.qualifications summary{cursor:pointer;font-size:22px;font-weight:500}
+.qualifications summary span{float:right;color:var(--wine)}
+.qualifications ul{list-style:none;margin:25px 0 0;padding:0}
+.qualifications li{display:grid;grid-template-columns:1.6fr 1fr 30px;gap:24px;padding:16px 0;border-top:1px solid var(--line)}
+.qualifications strong{font-weight:500}.qualifications li span{color:var(--muted)}.qualifications b{text-align:right;color:var(--wine)}
+.formats{background:#f4f4f4}.format-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.format-card{padding:30px;border-top:2px solid var(--wine);background:white;display:flex;flex-direction:column;align-items:start}
+.format-index{color:var(--wine);font-size:14px;margin-bottom:28px}
+.format-card h3{font-size:34px;font-weight:500;margin-bottom:18px}.format-card p{color:var(--muted);margin-bottom:32px}
+.format-card strong{margin-top:auto;padding-top:20px;border-top:1px solid var(--line);font-size:16px;font-weight:500;width:100%}
+.formats-note{color:var(--muted);max-width:900px;margin-top:30px;font-size:15px}
+.quality-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 60px}
+.quality-grid article{padding-top:22px;border-top:1px solid var(--wine)}
+.quality-grid h3{font-size:25px;font-weight:500;margin-bottom:14px}.quality-grid p{color:var(--muted);max-width:510px}
+.industry-block{margin-top:60px;padding-top:30px;border-top:1px solid var(--line)}
+.industry-block h3{font-size:24px;font-weight:500;margin-bottom:25px}
+.industry-block ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px 30px}
+.industry-block li{color:var(--muted);padding-left:18px;border-left:2px solid var(--wine)}
+@media(max-width:1100px){#approach .principles{grid-template-columns:repeat(3,minmax(0,1fr))}.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.format-card{padding:23px}.industry-block ul{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){#approach .principles,.team-grid,.format-grid,.quality-grid{grid-template-columns:1fr}.team-grid{gap:32px}.team-member h3{font-size:26px}.team-initials{margin-bottom:18px}.qualifications li{grid-template-columns:1fr 30px;gap:6px 15px}.qualifications li span{grid-column:1;grid-row:2}.qualifications b{grid-column:2;grid-row:1}.industry-block ul{grid-template-columns:1fr}.format-card h3{font-size:30px}}
+
